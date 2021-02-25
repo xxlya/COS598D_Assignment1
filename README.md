@@ -72,7 +72,7 @@ python main.py --model-class lottery --model vgg16 --dataset cifar10 --experimen
 | 1|    |      |        |      |         |
 | 2|    |      |        |      |         |
 
-***Testing time***
+***Testing time (infernce on testing dataset)***
 
 |   Compression |   Rand |  Mag |  SNIP |  GraSP | SynFlow       |   
 |----------------|-------------|-------------|-------------|---------------|----------------|
@@ -82,6 +82,19 @@ python main.py --model-class lottery --model vgg16 --dataset cifar10 --experimen
 | 0.5|    |      |        |      |         |
 | 1|    |      |        |      |         |
 | 2|    |      |        |      |         |
+
+To track the runing time, you can use `timeit`. `pip intall timeit` if it has not been installed.
+```
+import timeit
+
+start = timeit.default_timer()
+
+#The module you try to calculate the running time
+
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)
+```
 
 
 ***FLOP***
