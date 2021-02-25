@@ -31,9 +31,9 @@ Example: Initialize a VGG16, prune with SynFlow and train it to the sparsity of 
 python main.py --model-class lottery --model vgg16 --dataset cifar10 --experiment singleshot --pruner synflow --compression 0.5
 ```
 
-To save the experiment, please add `--expid {NAME}`. `--compression-list` and `--pruner-list` are not available for runing example experiment. `--prune-epochs` is also not available as it does not affect your pruning in singleshot setting. 
+To save the experiment, please add `--expid {NAME}`. `--compression-list` and `--pruner-list` are not available for runing singleshot experiment. You can modify the souce code following `example/multishot.py` to run a list of parameters. `--prune-epochs` is also not available as it does not affect your pruning in singleshot setting. 
 
-For magnitude-based pruning, please set `--pre-epochs 200`. The other methods do pruning before training, thus they can use the default setting `--pre-epochs 0`.
+For magnitude-based pruning, please set `--pre-epochs 200`. You can reduce the epochs for pretrain to save some time. The other methods do pruning before training, thus they can use the default setting `--pre-epochs 0`.
 
 Please use the default batch size, learning rate, optimizer in the following experiment. Please use the default training and testing spliting. Please monitor training loss and testing loss, and set suitable training epochs.
 
