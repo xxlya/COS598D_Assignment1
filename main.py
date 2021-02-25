@@ -31,7 +31,7 @@ if __name__ == '__main__':
                         help='load pretrained weights (default: False)')
     training_args.add_argument('--optimizer', type=str, default='adam', choices=['sgd','momentum','adam','rms'],
                         help='optimizer (default: adam)')
-    training_args.add_argument('--train-batch-size', type=int, default=64,
+    training_args.add_argument('--train-batch-size', type=int, default=256,
                         help='input batch size for training (default: 64)')
     training_args.add_argument('--test-batch-size', type=int, default=256,
                         help='input batch size for testing (default: 256)')
