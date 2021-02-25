@@ -111,11 +111,11 @@ print('Time: ', stop - start)
 For better visualization, you are encouraged to transfer the above three tables into curves and present them as three figrues.
 ### 2. The compression ratio of each layer
 Report the sparsity and draw the weight histograms of each layer using pruner Rand |  Mag |  SNIP |  GraSP | SynFlow with the following settings
-`model = vgg16`, `dataset=cifar10`, `compression = 1`
+`model = vgg16`, `dataset=cifar10`, `compression = 0.5`
 
 ***Bonus (optional)***
 
 Report the FLOP of each layer using pruner Rand |  Mag |  SNIP |  GraSP | SynFlow with the following settings
-`model = vgg16`, `dataset=cifar10`, `compression= 1`.
+`model = vgg16`, `dataset=cifar10`, `compression= 0.5`.
 ### 3. Explain your results and submit a short report.
 Please describe the settings of your experiments. Please include the required results (described in Task 1 and 2). Please add captions to describe your figures and tables. It would be best to write brief discussions on your results, such as the patterns (what and why), conclusions, and any observations you want to discuss.  
