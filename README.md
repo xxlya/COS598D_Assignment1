@@ -89,7 +89,7 @@ import timeit
 
 start = timeit.default_timer()
 
-#The module you try to calculate the running time
+#The module that you try to calculate the running time
 
 stop = timeit.default_timer()
 
