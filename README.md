@@ -35,7 +35,7 @@ To save the experiment, please add `--expid {NAME}`. `--compression-list` and `-
 
 For magnitude-based pruning, please set `--pre-epochs 200`. You can reduce the epochs for pretrain to save some time. The other methods do pruning before training, thus they can use the default setting `--pre-epochs 0`.
 
-Please use the default batch size, learning rate, optimizer in the following experiment. Please use the default training and testing spliting. Please monitor training loss and testing loss, and set suitable training epochs. You may try `--post-epoch 100'.
+Please use the default batch size, learning rate, optimizer in the following experiment. Please use the default training and testing spliting. Please monitor training loss and testing loss, and set suitable training epochs. You may try `--post-epoch 100`.
 
 ## You Tasks
 
